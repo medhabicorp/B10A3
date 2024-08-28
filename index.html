@@ -27,6 +27,8 @@
                 'process-2': '#EFDA6E',
                 'process-3': '#A4DAC3',
                 'process-4': '#77AAEA',
+                'bg-body': '#F4F4F4;',
+                'des-color': '#494949',
               }
             }
           }
@@ -42,9 +44,9 @@
 
 </head>
 
-<body class="manrope px-5 lg:px-32">
+<body class="manrope">
 <!-- header section -->
-  <header class=" container my-4 mx-auto lg:my-10 w-auto">
+  <header class="px-5 lg:px-32 container my-4 mx-auto lg:my-10 w-auto">
       <!-- navbar section   -->
           <nav class="navbar bg-white py-0 px-0">
               <div class="navbar-start ">
@@ -63,8 +65,8 @@
               <div class="navbar-end flex gap-2">
                 <img class="border-gray-400 border-[1px] rounded-full p-2 hidden lg:block" src="./assets/search-01.png" alt="">
                 <img class="border-gray-400 border-[1px] rounded-full p-2 hidden lg:block" src="./assets/shopping-cart-01.png" alt="">
-                <a class="gap-2 items-center px-5 py-2 bg-btn-menu rounded-[32px] hidden lg:flex" href="">
-                  <h1 class="font-bold border-none text-xl text-black">Get Ticket</h1>
+                <a class="gap-2 items-center px-5 py-2 bg-btn-menu rounded-[24px] hidden lg:flex" href="">
+                  <h1 class="font-bold border-none text-base text-black">Get Ticket</h1>
                   <img class="bg-black p-3 rounded-3xl" src="./assets/Group3.png" alt="">
                 </a>
                 <img class="border-gray-400 border-[1px] rounded-full p-2 block lg:hidden" src="./assets/hamburger.png" alt="">
@@ -72,16 +74,51 @@
             </nav>
       <section class="container mx-auto banner flex flex-col gap-6 text-center mt-4">
         <img class="w-[570px] mx-auto" src="./assets/banner.png" alt="">
-        <h1 class=" font-extrabold mx-auto text-3xl lg:text-6xl ">A barn house of this design has a striking appearance</h1>
-        <p class="text-m leading-6 w-3/4 m-auto mt-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-        <a class="flex gap-2 items-center justify-center px-5 py-2 bg-btn-body rounded-[32px] w-52 mx-auto" href="">
+        <h1 class=" font-extrabold mx-auto lg:w-3/4 text-3xl lg:text-6xl ">A barn house of this design has a striking appearance</h1>
+        <p class="text-base text-des-color leading-6 w-3/4 m-auto mt-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <a class="flex gap-2 items-center justify-center px-5 py-2 bg-btn-body rounded-[32px] w-full lg:w-52 mx-auto" href="">
           <h1 class="font-bold border-none text-xl text-black p-0 m-0">View Details</h1>
           <img class="bg-btn-menu p-2 rounded-3xl" src="./assets/Group1.png" alt="">
         </a>
       </section>
   </header>
   <main>
-
+    <!-- about us section -->
+     <section class="container mx-auto bg-bg-body pt-8 px-5 lg:px-32">
+      <img class="hidden lg:block lg:absolute left-20" src="./assets/Vector 14.png" alt="">
+      <div class="container mx-auto flex flex-col lg:flex-row gap-9 lg:mt-14">
+        <div class="flex items-center lg:items-start flex-col gap-6 lg:w-1/2">
+          <div class="flex gap-2 rounded-3xl bg-white px-4 w-32">
+            <img class="w-fit" src="./assets/Group2.png" alt="">
+            <p class="text-des-color">About Us</p>
+          </div>
+          <h2 class="text-4xl text-center font-extrabold">We design thoughtful, <br>liveable spaces</h2>
+          <p class="text-des-color text-base lg:w-3/4">
+            A barn house is a rural structure combining living quarters with a barn, often featuring rustic, open-plan designs.</p>
+            <div class="items-center p-6 flex gap-6 bg-white rounded-2xl">
+              <div class="">
+                <img class="" src="./assets/commercial.png" alt="">
+              </div>
+            <div class="flex flex-col gap-4 ">
+              <h4 class="text-xl font-extrabold">Commercial</h4>
+              <p class="text-base text-des-color">The barn house is great for commercial spaces where you can rent this house.</p>
+            </div>
+          </div>
+          <div class="items-center p-6 flex gap-4 bg-white rounded-2xl">
+            <div class="">
+              <img class="" src="./assets/residential.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4 ">
+              <h4 class="text-xl font-extrabold">Residential</h4>
+              <p class="text-base text-des-color">The barn house is great for Residential spaces where you can live peacefully.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <img class="h-96 lg:h-[530px] min-w-full" src="./assets/Rectangle.png" alt="">
+        </div>
+      </div>
+     </section>
   </main>
   <Footer>
 
