@@ -21,7 +21,7 @@
             extend: {
               colors: {
                 clifford: '#ABEF5F',
-                'btn-menu': '#FF4240',
+                'btn-menu': '#ABEF5F',
                 'btn-body': '#ABEF5F80',
                 'process-1': '#E7C1D3',
                 'process-2': '#EFDA6E',
@@ -44,33 +44,21 @@
 
 <body class="manrope">
   <header>
-    <header class="my-4 mx-5 lg:my-14 lg:mx-32">
+    <header class="container my-4 mx-auto lg:my-14 lg:mx-auto border-2 border-red-400">
       <!-- navbar section   -->
-    <nav class="mb-6 lg:mb-12">
+      <nav class="container mb-6 lg:mb-12">
           <div class="navbar bg-white py-0 px-0">
               <div class="navbar-start ">
-                <div class="dropdown">
-                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                  </div>
-                  <ul tabindex="0" class="text-bold menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-                  </ul>
-                  </ul>
-                </div>
-                <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold gap-0">Medhabi<span class="text-btn-primary">'</span>s</a>
+                <img class="bg-btn-menu p-3 rounded-3xl" src="./assets/Group1.png" alt="">
+                <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold gap-0">Rinterio</a>
               </div>
               <div class="navbar-center hidden lg:flex">
                 <ul class="text-base font-bold menu menu-horizontal px-1">
-                  <li class="text-btn-primary"><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
+                  <li class="font-bold"><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Team</a></li>
+                  <li><a>Contact us</a></li>
                 </ul>
               </div>
               <div class="navbar-end flex lg:gap-6">
@@ -85,35 +73,28 @@
                         </clipPath>
                       </defs>
                     </svg>
-                <a class="btn bg-btn-primary text-xl text-white px-3">Get Ticket</a>
+                  <img class="hidden lg:flex" src="./assets/shopping-cart-01.png" alt="">
+                <div class="btn bg-btn-menu hidden lg:flex gap-2 rounded-[32px]">
+                  <h1 class="text-xl text-black bg-btn-menu border-black-50 p-0 m-0">Get Ticket</h1>
+                  <img class="bg-black p-3 rounded-3xl" src="./assets/Group3.png" alt="">
+                </div>
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </div>
+                  <ul tabindex="0" class="text-bold menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li class="font-bold"><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Team</a></li>
+                  <li><a>Contact us</a></li>
+                  </ul>
+                  </ul>
+                </div>
               </div>
             </div>
       </nav>
-      <!-- carousel sections -->
-      <div class="flex flex-col gap-4">
-      <div class="carousel w-full z-0 lg:relative">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="./Images/1.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-5 gap-5">
-              <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
-              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
-            </div>
-          </div> 
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="./Images/4.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-5 gap-5">
-              <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
-              <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
-            </div>
-          </div> 
-        </div>
-        <div class="z-10 lg:absolute -bottom-4 right-48 opacity-80">
-        <div class="p-8 bg-[#131318] flex flex-col gap-4 max-w-xl rounded-2xl">
-          <h3 class="text-white text-2xl">Meet all the experienced.</h3>
-          <p class="text-[#FFFFFF99] text-base">Meet all the experienced players from all over the world and have a great experience playing with them</p>
-        </div>
-      </div>
-    </div>
+
   </header>
   </header>
   <main>
